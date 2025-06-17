@@ -12,16 +12,15 @@
 CalculatorTests
   ✅ Is_Even_Number(2)
   ❌ Is_Even_Number(3)
-	  Expected: True
-	  But was:  False
+	   at DotnetTests.XUnitTests.CalculatorTests.Is_Even_Number(Int32 i) in C:\Users\Michal\Workspace\dorny\test-reporter\reports\dotnet\DotnetTests.NUnitV3Tests\CalculatorTests.cs:line 61
 	
   ❌ Exception_In_TargetTest
-	System.DivideByZeroException : Attempted to divide by zero.
+	   at DotnetTests.Unit.Calculator.Div(Int32 a, Int32 b) in C:\Users\Michal\Workspace\dorny\test-reporter\reports\dotnet\DotnetTests.Unit\Calculator.cs:line 9
+	   at DotnetTests.XUnitTests.CalculatorTests.Exception_In_TargetTest() in C:\Users\Michal\Workspace\dorny\test-reporter\reports\dotnet\DotnetTests.NUnitV3Tests\CalculatorTests.cs:line 33
   ❌ Exception_In_Test
-	System.Exception : Test
+	   at DotnetTests.XUnitTests.CalculatorTests.Exception_In_Test() in C:\Users\Michal\Workspace\dorny\test-reporter\reports\dotnet\DotnetTests.NUnitV3Tests\CalculatorTests.cs:line 39
   ❌ Failing_Test
-	  Expected: 3
-	  But was:  2
+	   at DotnetTests.XUnitTests.CalculatorTests.Failing_Test() in C:\Users\Michal\Workspace\dorny\test-reporter\reports\dotnet\DotnetTests.NUnitV3Tests\CalculatorTests.cs:line 27
 	
   ✅ Passing_Test
   ✅ Passing_Test_With_Description

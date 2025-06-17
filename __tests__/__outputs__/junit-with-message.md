@@ -12,4 +12,6 @@
 Fails
   ❌ Test
 	error.cpp:01
+	      Expected: true
+	      Which is: false >
 ```

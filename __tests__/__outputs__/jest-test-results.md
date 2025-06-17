@@ -895,6 +895,16 @@ async jasmine with pending during test
 ✅ handles a bad revision for "changedSince", for git
 ❌ gets changed files for hg
 	Error: abort: empty revision range
+	    at makeError (/home/dorny/dorny/jest/node_modules/execa/lib/error.js:59:11)
+	    at handlePromise (/home/dorny/dorny/jest/node_modules/execa/index.js:114:26)
+	    at runMicrotasks (<anonymous>)
+	    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+	    at Object.findChangedFiles (/home/dorny/dorny/jest/packages/jest-changed-files/build/hg.js:99:16)
+	    at async Promise.all (index 0)
+	    at getChangedFilesForRoots (/home/dorny/dorny/jest/packages/jest-changed-files/build/index.js:57:5)
+	    at Object.<anonymous> (/home/dorny/dorny/jest/e2e/__tests__/jestChangedFiles.test.ts:418:28)
+	    at _callCircusTest (/home/dorny/dorny/jest/packages/jest-circus/build/run.js:218:5)
+	    at _runTest (/home/dorny/dorny/jest/packages/jest-circus/build/run.js:155:3)
 ✅ monitors only root paths for hg
 ✅ handles a bad revision for "changedSince", for hg
 ```
@@ -1046,6 +1056,22 @@ No tests are found
 ✅ onlyChanged in config is overwritten by --all or testPathPattern
 ❌ gets changed files for hg
 	Error: expect(received).toMatch(expected)
+	
+	Expected pattern: /PASS __tests__(\/|\\)file2.test.js/
+	Received string:  "·
+	  ● Test suite failed to run·
+	    abort: empty revision range
+	"
+	    at Object.toMatch (/home/dorny/dorny/jest/e2e/__tests__/onlyChanged.test.ts:360:18)
+	    at Promise.then.completed (/home/dorny/dorny/jest/packages/jest-circus/build/utils.js:307:28)
+	    at new Promise (<anonymous>)
+	    at callAsyncCircusFn (/home/dorny/dorny/jest/packages/jest-circus/build/utils.js:229:10)
+	    at _callCircusTest (/home/dorny/dorny/jest/packages/jest-circus/build/run.js:218:40)
+	    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+	    at _runTest (/home/dorny/dorny/jest/packages/jest-circus/build/run.js:155:3)
+	    at _runTestsForDescribeBlock (/home/dorny/dorny/jest/packages/jest-circus/build/run.js:66:9)
+	    at run (/home/dorny/dorny/jest/packages/jest-circus/build/run.js:25:3)
+	    at runAndTransformResultsToJestFormat (/home/dorny/dorny/jest/packages/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:163:21)
 ✅ path on Windows is case-insensitive
 ```
 ### ✅ <a id="user-content-r0s99" href="#user-content-r0s99">e2e/__tests__/onlyFailuresNonWatch.test.ts</a>

@@ -369,9 +369,23 @@ valueListenableProvider
   ✅ pass keys
   ✅ don't listen again if stream instance doesn't change
   ❌ pass updateShouldNotify
+	══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
 	The following TestFailure object was thrown running a test:
 	  Expected: <2>
 	  Actual: <1>
 	Unexpected number of calls
 	
+	When the exception was thrown, this was the stack:
+	#0      fail (package:test_api/src/frontend/expect.dart:155:31)
+	#1      _expect (package:test_api/src/frontend/expect.dart:150:3)
+	#2      expect (package:test_api/src/frontend/expect.dart:59:3)
+	#3      VerificationResult.called (package:mockito/src/mock.dart:853:5)
+	#4      main.<anonymous closure>.<anonymous closure> (file:///__w/provider/provider/test/value_listenable_provider_test.dart:112:34)
+	<asynchronous suspension>
+	<asynchronous suspension>
+	(elided one frame from package:stack_trace)
+	
+	The test description was:
+	  pass updateShouldNotify
+	════════════════════════════════════════════════════════════════════════════════════════════════════
 ```
