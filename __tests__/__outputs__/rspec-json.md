@@ -11,10 +11,9 @@
 ```
 CheckEnvVars#call when all env vars are defined behaves like success load
   ❌ CheckEnvVars#call when all env vars are defined behaves like success load fails in assertion
-	/usr/local/bundle/ruby/3.3.0/gems/net-http-0.4.1/lib/net/http.rb:1603:in `initialize'
-	./config/check_env_vars.rb:11:in `call'
-	./spec/config/check_env_vars_spec.rb:7:in `block (3 levels) in <top (required)>'
-	./spec/config/check_env_vars_spec.rb:19:in `block (4 levels) in <top (required)>'
+	(#ActiveSupport::BroadcastLogger:0x00007f1007fedf58).debug("All config env vars exist")
+	    expected: 0 times with arguments: ("All config env vars exist")
+	    received: 1 time with arguments: ("All config env vars exist")
   ✅ CheckEnvVars#call when all env vars are defined behaves like success load logs success message
   ⚪ CheckEnvVars#call when all env vars are defined behaves like success load skips the test
 ```

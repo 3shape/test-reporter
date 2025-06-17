@@ -14,28 +14,19 @@ Test 1
   ✅ Passing test
 Test 1 Test 1.1
   ❌ Exception in target unit
-	Error: Some error
-	    at Object.throwError (lib\main.js:2:9)
-	    at Context.<anonymous> (test\main.test.js:15:11)
-	    at processImmediate (internal/timers.js:461:21)
+	Some error
   ❌ Failing test
-	AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+	Expected values to be strictly equal:
 	
 	false !== true
 	
-	    at Context.<anonymous> (test\main.test.js:11:14)
-	    at processImmediate (internal/timers.js:461:21)
 Test 2
   ❌ Exception in test
-	Error: Some error
-	    at Context.<anonymous> (test\main.test.js:22:11)
-	    at processImmediate (internal/timers.js:461:21)
+	Some error
 ```
 ### ❌ <a id="user-content-r0s1" href="#user-content-r0s1">test/second.test.js</a>
 ```
 ⚪ Skipped test
 ❌ Timeout test
-	Error: Timeout of 1ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\Michal\Workspace\dorny\test-reporter\reports\mocha\test\second.test.js)
-	    at listOnTimeout (internal/timers.js:554:17)
-	    at processTimers (internal/timers.js:497:7)
+	Timeout of 1ms exceeded. For async tests and hooks, ensure "done()" is called; if returning a Promise, ensure it resolves. (C:\Users\Michal\Workspace\dorny\test-reporter\reports\mocha\test\second.test.js)
 ```

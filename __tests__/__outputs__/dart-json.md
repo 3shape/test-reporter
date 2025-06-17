@@ -14,22 +14,18 @@ Test 1
   ✅ Passing test
 Test 1 Test 1.1
   ❌ Failing test
-	package:test_api          expect
-	test\main_test.dart 13:9  main.<fn>.<fn>.<fn>
+	Expected: <2>
+	  Actual: <1>
 	
   ❌ Exception in target unit
-	package:darttest/main.dart 2:3  throwError
-	test\main_test.dart 17:9        main.<fn>.<fn>.<fn>
-	
+	Exception: Some error
 Test 2
   ❌ Exception in test
-	test\main_test.dart 24:7  main.<fn>.<fn>
-	
+	Exception: Some error
 ```
 ### ❌ <a id="user-content-r0s1" href="#user-content-r0s1">test/second_test.dart</a>
 ```
 ❌ Timeout test
-	dart:isolate  _RawReceivePortImpl._handleMessage
-	
+	TimeoutException after 0:00:00.000001: Test timed out after 0 seconds.
 ⚪ Skipped test
 ```
